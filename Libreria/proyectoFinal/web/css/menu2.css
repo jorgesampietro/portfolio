@@ -1,0 +1,669 @@
+/**************menu CSS**********************/
+html{
+    margin:auto;
+    background: url(../Imagen/fondo1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/********BODY*********/
+body{
+    margin:0%;
+}
+
+/********FIN BODY*********/
+
+/********MENU CSS*********/
+
+
+#cssmenu ul {
+    top:0%;
+    position:fixed;
+    margin: auto;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    /*    position: relative;*/
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    background: #1a171a;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #1a171a;
+    zoom: 1;
+}
+#cssmenu ul:before {
+    content: '';
+    display: block;
+}
+#cssmenu ul:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+#cssmenu li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0 4px;
+}
+#cssmenu li a {
+    display: block;
+    float: left;
+    color: #999999;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px 7px 20px;
+    border-bottom: 3px solid transparent;
+}
+#cssmenu li a:hover {
+    color: #FFFFFF;
+    border-bottom: 3px solid #689bad;
+}
+#cssmenu li.active a {
+    display: inline;
+    border-bottom: 3px solid #689bad;
+    float: left;
+    margin: 0;
+}
+
+
+/**************FIN menu CSS**********************/
+/**************INICIO div modificar**********************/
+.divModificar{
+   
+    height: 20%;
+    
+    color:white;
+    margin-top: 6%;
+    margin-left: 33.5%;
+    margin-right:35%;
+    margin-bottom:16%;
+    padding:1%;
+    width:30%;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000', endColorstr = '#000000');
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000', endColorstr = '#000000')";
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    background-image: -moz-linear-gradient(top, #000000, #000000);
+    background-image: -ms-linear-gradient(top, #000000, #000000);
+    background-image: -o-linear-gradient(top, #000000, #000000);
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#000000), to(#000000));
+    background-image: -webkit-linear-gradient(top, #000000, #000000);
+    background-image: linear-gradient(top, #000000, #000000);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+    /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+    opacity: 0.85;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 85);
+    /*-ms-filter must come before filter*/
+    filter: alpha(opacity = 85);
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*All filters must be placed together*/
+
+}
+
+/**************FIN div modificar**********************/
+/**************INICIO FORMULARIOS**********************/
+
+.form{
+    width:50%;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+/**************FIN FORMULARIOS**********************/
+/**************INICIO DIV RESULTADO ADMIN**********************/
+.resultado{
+    margin-top:37%;  
+    margin-left:50%;  
+    height: 20%;
+    width: 30%;
+    color:white;
+
+}
+
+/**************FIN DIV RESULTADO ADMIN**********************/
+
+/**************INICIO DIV RESULTADO USER**********************/
+.resultadoUser{
+    margin-top:22%;  
+    margin-left:50%;  
+    height: 20%;
+    width: 30%;
+    color:white;
+
+}
+
+/**************FIN DIV RESULTADO USER**********************/
+/**************INICIO DIV RESULTADO ACTUALIZAR**********************/
+.resultadoActualizar{
+    
+    height: 40%;
+    width: 90%;
+    color:white;
+    font-size: 14px;
+    
+    
+    color:white;
+    margin-top: 6%;
+    margin-left: 25%;
+    margin-right:25%;
+    margin-bottom:16%;
+    padding:1%;
+    width:50%;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000', endColorstr = '#000000');
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000', endColorstr = '#000000')";
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    background-image: -moz-linear-gradient(top, #000000, #000000);
+    background-image: -ms-linear-gradient(top, #000000, #000000);
+    background-image: -o-linear-gradient(top, #000000, #000000);
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#000000), to(#000000));
+    background-image: -webkit-linear-gradient(top, #000000, #000000);
+    background-image: linear-gradient(top, #000000, #000000);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+    /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+    opacity: 0.85;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 85);
+    /*-ms-filter must come before filter*/
+    filter: alpha(opacity = 85);
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*All filters must be placed together*/
+
+
+    
+}
+/**************FIN DIV RESULTADO ACTUALIZAR**********************/
+
+/**************INICIO DIV RESULTADO ELIMINAR**********************/
+.resultadoEliminar{
+    
+    height: 40%;
+    font-size: 14px;
+    
+    color:white;
+    margin-top: 6%;
+    margin-left: 25%;
+    margin-right:25%;
+    margin-bottom:16%;
+    padding:1%;
+    width:50%;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000', endColorstr = '#000000');
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000', endColorstr = '#000000')";
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    background-image: -moz-linear-gradient(top, #000000, #000000);
+    background-image: -ms-linear-gradient(top, #000000, #000000);
+    background-image: -o-linear-gradient(top, #000000, #000000);
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#000000), to(#000000));
+    background-image: -webkit-linear-gradient(top, #000000, #000000);
+    background-image: linear-gradient(top, #000000, #000000);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+    /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+    opacity: 0.85;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 85);
+    /*-ms-filter must come before filter*/
+    filter: alpha(opacity = 85);
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*All filters must be placed together*/
+    
+}
+/**************FIN DIV RESULTADO ACTUALIZAR**********************/
+/**************INICIO DIV RESULTADO BUSCAR**********************/
+.resultadoBuscar{
+    margin-top:1%;  
+    margin-left:5%;  
+    margin-bottom:7%;  
+    height: 40%;
+    width: 90%;
+    color:white;
+    font-size: 14px;
+    
+    
+    color:white;
+    margin-top: 17%;
+    margin-left: 25%;
+    margin-right:25%;
+    margin-bottom:16%;
+    padding:1%;
+    width:50%;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000', endColorstr = '#000000');
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000', endColorstr = '#000000')";
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    background-image: -moz-linear-gradient(top, #000000, #000000);
+    background-image: -ms-linear-gradient(top, #000000, #000000);
+    background-image: -o-linear-gradient(top, #000000, #000000);
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#000000), to(#000000));
+    background-image: -webkit-linear-gradient(top, #000000, #000000);
+    background-image: linear-gradient(top, #000000, #000000);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+    /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+    opacity: 0.85;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 85);
+    /*-ms-filter must come before filter*/
+    filter: alpha(opacity = 85);
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*All filters must be placed together*/
+    
+}
+/**************FIN DIV RESULTADO BUSCAR**********************/
+
+/**************DIV CONTENEDOR**********************/
+
+.contenededor{
+    color:white;
+    margin-top: 11%;
+    margin-left: 35%;
+    margin-right:25%;
+    margin-bottom:9%;
+    padding:1%;
+    width:30%;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000', endColorstr = '#000000');
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000', endColorstr = '#000000')";
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    background-image: -moz-linear-gradient(top, #000000, #000000);
+    background-image: -ms-linear-gradient(top, #000000, #000000);
+    background-image: -o-linear-gradient(top, #000000, #000000);
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#000000), to(#000000));
+    background-image: -webkit-linear-gradient(top, #000000, #000000);
+    background-image: linear-gradient(top, #000000, #000000);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+    /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+    opacity: 0.85;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 85);
+    /*-ms-filter must come before filter*/
+    filter: alpha(opacity = 85);
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*All filters must be placed together*/
+
+
+}
+
+/*******FIN DIV CONTENEDOR TRANSPARENTE****/
+
+/**************DIV userYpass**********************/
+.userYpass{
+    min-height: 30px;
+}
+
+
+/**************FIN DIV userYpass**********************/
+
+/**************DIV izquierda**********************/
+.left{
+    float:left;
+    margin-left: 30px auto;
+    color: white;
+
+}
+/**************DIV derecha**********************/
+.right{
+    float:right;
+    margin-right: 30px auto;    
+    color:white;
+}
+/**INICIO boton**/
+
+.button{
+    margin: 4% 42%;
+
+
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #464646) );
+    background:-moz-linear-gradient( center top, #f9f9f9 5%, #464646 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#464646');
+    background-color:#f9f9f9;
+    -webkit-border-top-left-radius:0px;
+    -moz-border-radius-topleft:0px;
+    border-top-left-radius:0px;
+    -webkit-border-top-right-radius:0px;
+    -moz-border-radius-topright:0px;
+    border-top-right-radius:0px;
+    -webkit-border-bottom-right-radius:0px;
+    -moz-border-radius-bottomright:0px;
+    border-bottom-right-radius:0px;
+    -webkit-border-bottom-left-radius:0px;
+    -moz-border-radius-bottomleft:0px;
+    border-bottom-left-radius:0px;
+    text-indent:0;
+    border:0px solid #dcdcdc;
+    display:inline-block;
+    color:white;
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    font-style:normal;
+    height:35px;
+    line-height:35px;
+    width:93px;
+    text-decoration:none;
+    text-align:center;
+}
+.button:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #464646), color-stop(1, #f9f9f9) );
+    background:-moz-linear-gradient( center top, #464646 5%, #f9f9f9 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#464646', endColorstr='#f9f9f9');
+    background-color:#464646;
+}.button:active {
+    position:relative;
+    top:1px;
+}
+
+
+/**FIN boton**/
+
+/**************DIV pie*******/
+
+.pie{
+
+    bottom: 0%;
+    position: fixed;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding:0.04%;
+    font-size: 12px;
+    width: 100%;
+    color:white;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000', endColorstr = '#000000');
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000', endColorstr = '#000000')";
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    background-image: -moz-linear-gradient(top, #000000, #000000);
+    background-image: -ms-linear-gradient(top, #000000, #000000);
+    background-image: -o-linear-gradient(top, #000000, #000000);
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#000000), to(#000000));
+    background-image: -webkit-linear-gradient(top, #000000, #000000);
+    background-image: linear-gradient(top, #000000, #000000);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+    /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+    opacity: 0.85;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 85);
+    /*-ms-filter must come before filter*/
+    filter: alpha(opacity = 85);
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*All filters must be placed together*/
+
+
+}
+/***SLIDER**/
+
+#slider
+{
+    height: 300px;
+    width: 719px;
+    background-color: black;
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+    overflow: visible;
+    position: relative;
+
+}
+#mask {
+    overflow: hidden;
+    height: 300px; 
+}
+#slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#slider li { 
+    width: 390px;  
+    height: 719px; 
+    position: absolute;
+
+    list-style: none;
+}
+
+#slider li.primeraAnimacion {
+    animation: cycle 25s linear infinite;		
+}
+
+#slider li.segundaanimacion {
+    animation: cycletwo 25s linear infinite;	
+}
+
+#slider li.terceraanimacion {
+    animation: cyclethree 25s linear infinite;		
+}
+
+#slider li.cuartaanimacion {
+    animation: cyclefour 25s linear infinite;		
+}
+
+
+
+
+@keyframes cycle {
+    0%  { top: 0px; } 
+4%  { top: 0px; } 
+16% { top: 0px; opacity:1; z-index:0; } 
+20% { top: 325px; opacity: 0; z-index: 0; } 
+21% { top: -325px; opacity: 0; z-index: -1; } 
+92% { top: -325px; opacity: 0; z-index: 0; }
+96% { top: -325px; opacity: 0; } 
+100%{ top: 0px; opacity: 1; }
+}
+
+@keyframes cycletwo {
+    0%  { top: -325px; opacity: 0; } 
+16% { top: -325px; opacity: 0; }
+20% { top: 0px; opacity: 1; }
+24% { top: 0px; opacity: 1; } 
+36% { top: 0px; opacity: 1; z-index: 0; }  
+40% { top: 325px; opacity: 0; z-index: 0; } 
+41% { top: -325px; opacity: 0; z-index: -1; }  
+100%{ top: -325px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cyclethree {
+    0%  { top: -325px; opacity: 0; }
+36% { top: -325px; opacity: 0; }
+40% { top: 0px; opacity: 1; }
+44% { top: 0px; opacity: 1; } 
+56% { top: 0px; opacity: 1; } 
+60% { top: 325px; opacity: 0; z-index: 0; }
+61% { top: -325px; opacity: 0; z-index: -1; } 
+100%{ top: -325px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cyclefour {
+    0%  { top: -325px; opacity: 0; }
+56% { top: -325px; opacity: 0; }
+60% { top: 0px; opacity: 1; }
+64% { top: 0px; opacity: 1; }
+76% { top: 0px; opacity: 1; z-index: 0; }
+80% { top: 325px; opacity: 0; z-index: 0; }
+81% { top: -325px; opacity: 0; z-index: -1; }
+100%{ top: -325px; opacity: 0; z-index: -1; }
+}
+
+/**INICIO tablas anadir eliminar login**/
+.tabla{
+    margin-top:2%;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+}
+/**FIN tablas anadir eliminar login**/
+/**INICIO tabla modificar**/
+.tablaModificar{
+    margin-top:2%;
+    margin-left:28%;
+    width:50%;
+}
+/**FIN tabla modificar**/
+
+/**TABLA LISTAR**/
+
+.tablaListar a{
+    text-decoration: none;
+    color: white;
+}
+.tablaListar {
+
+    margin-top:8%;
+    margin-left:25.3%;
+    margin-right:26.3%;
+    margin-bottom: 4%;
+    padding:0px;
+    width:50%;
+    border:0px solid #000000;
+    -moz-border-radius-bottomleft:0px;
+    -webkit-border-bottom-left-radius:0px;
+    border-bottom-left-radius:0px;
+
+    -moz-border-radius-bottomright:0px;
+    -webkit-border-bottom-right-radius:0px;
+    border-bottom-right-radius:0px;
+
+    -moz-border-radius-topright:0px;
+    -webkit-border-top-right-radius:0px;
+    border-top-right-radius:0px;
+
+    -moz-border-radius-topleft:0px;
+    -webkit-border-top-left-radius:0px;
+    border-top-left-radius:0px;
+}.tablaListar table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width:100%;
+    height:100%;
+    margin:0px;padding:0px;
+}.tablaListar tr:last-child td:last-child {
+    -moz-border-radius-bottomright:0px;
+    -webkit-border-bottom-right-radius:0px;
+    border-bottom-right-radius:0px;
+}
+.tablaListar table tr:first-child td:first-child {
+    -moz-border-radius-topleft:0px;
+    -webkit-border-top-left-radius:0px;
+    border-top-left-radius:0px;
+}
+.tablaListar table tr:first-child td:last-child {
+    -moz-border-radius-topright:0px;
+    -webkit-border-top-right-radius:0px;
+    border-top-right-radius:0px;
+}.tablaListar tr:last-child td:first-child{
+    -moz-border-radius-bottomleft:0px;
+    -webkit-border-bottom-left-radius:0px;
+    border-bottom-left-radius:0px;
+}.tablaListar tr:hover td{
+
+}
+.tablaListar tr:nth-child(odd){ background-color:#4a4a4a; }
+.tablaListar tr:nth-child(even)    { background-color:#ffffff; }.tablaListar td{
+    vertical-align:middle;
+
+
+    border:1px solid #000000;
+    border-width:0px 1px 1px 0px;
+    text-align:left;
+    padding:7px;
+    font-size:12px;
+    font-family:Arial;
+    font-weight:normal;
+    color:#0c0b0b;
+}.tablaListar tr:last-child td{
+    border-width:0px 1px 0px 0px;
+}.tablaListar tr td:last-child{
+    border-width:0px 0px 1px 0px;
+}.tablaListar tr:last-child td:last-child{
+    border-width:0px 0px 0px 0px;
+}
+.tablaListar tr:first-child td{
+    background:-o-linear-gradient(bottom, #252525 5%, #020202 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #252525), color-stop(1, #020202) );
+    background:-moz-linear-gradient( center top, #252525 5%, #020202 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#252525", endColorstr="#020202");	background: -o-linear-gradient(top,#252525,020202);
+
+    background-color:#252525;
+    border:0px solid #000000;
+    text-align:center;
+    border-width:0px 0px 1px 1px;
+    font-size:14px;
+    font-family:Arial;
+    font-weight:bold;
+    color:#ffffff;
+}
+.tablaListar tr:first-child:hover td{
+    background:-o-linear-gradient(bottom, #252525 5%, #020202 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #252525), color-stop(1, #020202) );
+    background:-moz-linear-gradient( center top, #252525 5%, #020202 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#252525", endColorstr="#020202");	background: -o-linear-gradient(top,#252525,020202);
+
+    background-color:#252525;
+}
+.tablaListar tr:first-child td:first-child{
+    border-width:0px 0px 1px 0px;
+}
+.tablaListar tr:first-child td:last-child{
+    border-width:0px 0px 1px 1px;
+}
+/** FIN TABLA LISTAR**/
