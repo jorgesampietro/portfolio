@@ -55,9 +55,9 @@ public class UsuarioAction implements Action {
             resp = clienteDAO.exists(miCliente);
         } catch (Exception ex) {
         }
-        //en el caso de que dé algún error ....
+        //en el caso de que de algun error ....
         if (resp) {
-//                HttpSession sesion = request.getSession();
+
             if (miCliente.getTipo() == 1) {
                 HttpSession session = request.getSession();
                 session.setAttribute("Objeto usuario", miCliente);

@@ -38,9 +38,9 @@ public class UsuarioDAO extends SQLTools implements DAO<Usuario, Integer> {
                 + "'" + entidad.getPass() + "')";
 
         System.out.println("" + sql);
-        int respuesta = super.ejecutar(sql);                                      // ejecuta la orden en el super. Es un numero por defecto en 0. Si hace cambios en la BD devuelve la cantidad de filas modificadas                                  
+        int respuesta = super.ejecutar(sql);                                      // ejecuta la orden en el super. Es un numero por defecto en 0. 
         super.desconectar();                                                      //al acabar desconecta de la base
-        return respuesta;                                                         // devuelve el numero de filas que se han modificado
+        return respuesta;                                                         
 
     }
 
@@ -62,7 +62,7 @@ public class UsuarioDAO extends SQLTools implements DAO<Usuario, Integer> {
 
         String cabecera = SQL_UPDATE;                                             // crea la sentencia a ejecutar en la base de datos desde el atributo previamente creado como base
         String cuerpo = "";                                                         // UPDATE usuario SET + variable
-        // con los if voy añadiendo a la variable las cosas a modificar o dejandolas como estan
+        // con los if voy añadiendo a la variable los campos a modificar
        
          if (entidad.getTipo() != 0) {
             if (cuerpo.equals("")) {
@@ -130,7 +130,7 @@ public class UsuarioDAO extends SQLTools implements DAO<Usuario, Integer> {
         String sql = SQL_FIND_ALL + getSQLDinamica(entidad);
         ResultSet rs = super.ejecutarConsulta(sql);
         ArrayList<Usuario> tabla = new ArrayList<Usuario>();
-        while (rs.next()) {//si de la consulta solo se obtiene un registro no tiene siguiente
+        while (rs.next()) {
             Usuario usuario = new Usuario();
             usuario.setIdUsuario(rs.getInt(1));
             usuario.setUsuario(rs.getString(3));
@@ -148,7 +148,7 @@ public class UsuarioDAO extends SQLTools implements DAO<Usuario, Integer> {
     //    Metodos   especificos                   //
     //                                                            //
     private String getSQLDinamica(Usuario usuario) throws Exception {
-// En el proyecto hemos llamado a CONSULTAS FIND (Buscar por cualqien parámetro del     
+// En el proyecto hemos llamado a CONSULTAS FIND (Buscar por cualquier parametro)     
         String cuerpo = "";
         if (usuario != null) {
             if (usuario.getIdUsuario() != 0) {

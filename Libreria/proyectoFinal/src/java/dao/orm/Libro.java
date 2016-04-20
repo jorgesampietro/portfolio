@@ -1,11 +1,4 @@
-/* productos
- 1. Id_producto                                         int(10)	  	NO 
- //
- 2. Nombre                                                varchar(20)	NO	  	 
- 3. Descripcion                                         varchar(50)	Sí 	NULL  	 
- 4. Cantidad                                              int(4)                        No 	  	 
- 5. Precio                                                  double(10,2)	No 
- */
+
 package dao.orm;
 
 public class Libro {

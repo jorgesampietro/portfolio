@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Controlador;
 
 import Controlador.Action.Action;
@@ -29,13 +26,13 @@ public class Controlador extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // RECUPERAR PARÁMETROS POR POST
+        // RECUPERAR PARAMETROS POR POST
         // ACTION, USER, PASS
-        //Recoger parámetros
+        //Recoger parametros
         //Ejemplo: PRODUCTO.ADD
         //actionReq: USUARIO.LOGIN
         String actionReq = (String) request.getParameter("ACTION");
-        //el split rompe por un caracter de coincidencia
+        //El split rompe por un caracter de coincidencia
         //asi coge el punto como caracter
         //como si solo hubiera punto sin las barras
         String[] action = actionReq.split("\\.");

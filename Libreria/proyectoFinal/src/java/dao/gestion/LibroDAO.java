@@ -1,11 +1,4 @@
-/* productos
- 1. Id_producto                                         int(11)	  	NO 
- //2. Cod                                                varchar(45)	NO	  	 
- 3. Nombre                                                varchar(45)	NO	  	 
- * 4. Precio                                                  double(10,2)	No 
- * 5. Cantidad                                              int(11)                        No 	  	 
- 
- */
+
 package dao.gestion;
 
 import java.sql.ResultSet;
@@ -40,9 +33,9 @@ public class LibroDAO extends SQLTools implements DAO<Libro, Integer> {
 
 
         System.out.println("" + sql);
-        int respuesta = super.ejecutar(sql);                                        // ejecuta la orden en el super. Es un numero por defecto en 0. Si hace cambios en la BD devuelve la cantidad de filas modificadas                                  
-        super.desconectar();                                                        // al acabar desconecta de la base
-        return respuesta;                                                           // devuelve el numero de filas que se han modificado
+        int respuesta = super.ejecutar(sql);                                        // ejecuta la orden en el super. Es un numero por defecto en 0. 
+        super.desconectar();                                                        // al acabar, desconecta de la base
+        return respuesta;                                                           
 
     }
 
@@ -65,7 +58,7 @@ public class LibroDAO extends SQLTools implements DAO<Libro, Integer> {
         String cabecera = SQL_UPDATE;                                               // crea la sentencia a ejecutar en la base de datos desde el atributo previamente creado como base
         String cuerpo = "";                                                         // UPDATE producto SET + variable
 
-        if (entidad.getIsbn() != 0) {                                          // con los if voy añadiendo a la variable las cosas a modificar o dejandolas como estan
+        if (entidad.getIsbn() != 0) {                                          // con los if voy añadiendo a la variable los campos a modificar
             if (cuerpo.equals("")) {
                 cuerpo += " isbn = " + entidad.getIsbn() ;
             } else {
@@ -162,7 +155,7 @@ public class LibroDAO extends SQLTools implements DAO<Libro, Integer> {
     //    Metodos   especificos                   //*******************************************
     //                                                            //
     private String getSQLDinamica(Libro producto) throws Exception {
-// En el proyecto hemos llamado a CONSULTAS FIND (Buscar por cualqien parámetro del     
+// En el proyecto hemos llamado a CONSULTAS FIND (Buscar por cualquier parametro)
         String cuerpo = "";
         if (producto != null) {
             if (producto.getId_libro() != 0) {
@@ -288,7 +281,7 @@ public class LibroDAO extends SQLTools implements DAO<Libro, Integer> {
             producto2.setTitulo("Diamond");
             System.out.println("Test listado correcto   **********************");
             ArrayList<Libro> consulta = productoDAO.findAll(producto2);
-            for (Libro listaLibro : consulta) {//Cuando solo imprime un producto no entra
+            for (Libro listaLibro : consulta) {
                 System.out.println(listaLibro.toString());
             }
         } catch (Exception ex) {

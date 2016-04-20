@@ -20,9 +20,7 @@ public class LibroAction implements Action {
             HttpServletResponse response) {
         String pageResp = "";
 
-//        if (method.equals("LOGIN")) {
-//            pageResp = login(request, response);
-//        } else 
+
         if (method.equals("ADD")) {
             pageResp = add(request, response);
 
@@ -54,10 +52,7 @@ public class LibroAction implements Action {
         }
         return pageResp;
     }
-//    private String login(HttpServletRequest request, 
-//                            HttpServletResponse response){
-//        
-//    }
+
 
     private String add(HttpServletRequest request,
             HttpServletResponse response) {

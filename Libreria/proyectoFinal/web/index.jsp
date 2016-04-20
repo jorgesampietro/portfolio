@@ -10,13 +10,7 @@
         <title>Principal</title>
     </head>
     <body>
-
-       <%-- <%if (session.getAttribute("Objeto usuario") != null) {%>
-        <%@include file="plantilla/menuUser_logout.jspf" %>
-        <%} else {%>
-        <%@include file="plantilla/menuUser.jspf" %>
-        <%                    }%>--%>
-         
+               
         <%Usuario usuarioSESION = (Usuario) session.getAttribute("Objeto usuario");%>
                 <% if (session.getAttribute("Objeto usuario") != null && usuarioSESION.getTipo() == 0) {%>
 

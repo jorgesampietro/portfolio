@@ -1,13 +1,7 @@
 package dao.orm;
 
 public class Usuario {
-    /*
-     *  Textos completos 	
-     * Id_usuario 	  	
-     * Tipo
-     * Usuario
-     * Pass 
-     */
+    
     // Atributos de la clase
     private  int idUsuario;
     private int tipo;

@@ -22,9 +22,8 @@ public class SQLTools {
             // Indico el controlador necesario en función de la base de datos
             Class.forName(CONTROLADOR);
             // Objeto que me devuelve una conexión a MySql
-            // jdbc:mysql://localhost:3306/sunglasses
             con = DriverManager.getConnection(URL,USER,PASS);
-            // Un objeto que me permite hablar con la base de datos
+            // Un objeto que me permite interactuar con la base de datos
             st = con.createStatement();
         }catch (Exception ex) {
             System.out.println("Error al conectar a la base de datos.");
@@ -47,7 +46,7 @@ public class SQLTools {
         int resp = 0 ;
         try {
             resp = st.executeUpdate(sql);
-            // el de arriba ó este => resp = st.execute(sql);
+            // el de arriba ó este => resp = st.execute(sql) los dos estan bien;
         } catch (Exception ex) {
             System.out.println("Error al modificar los datos. ");
         }
